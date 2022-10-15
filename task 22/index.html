@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    </head> 
+    <body>
+        <div class="container">
+            <h1 class="text-center">Application Form</h1>
+            <div class="col-sm-8 col-lg-8 col-xs-8 col-md-8 m-auto d-block">
+                <form name="myform" class="bg-light" method="post" action="wel.html" >
+                    <div class="form-group mt-4">
+                        <label> First Name :<span style="color: red;">*</span></label>
+                        <input type="text" name="fname" class="form-control" id="fname" autocomplete="off" >
+                        <span id="fnameerror" name="fnameerror" class="comerror text-danger" >Enter Valid First Name</span><br>
+                    </div>   
+                    <div class="form-group">
+                        <label> Last Name :<span style="color: red;">*</span></label>
+                        <input type="text" name="lname" class="form-control" id="lname" autocomplete="off">
+                        <span id="lnameerror" name="lnameerror" class="comerror text-danger">Enter Valid Last Name</span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label> User Name :<span style="color: red;">*</span></label>
+                        <input type="text" name="username" class="form-control" id="username" autocomplete="off" 
+                        >
+                        <span id="usererror" name="usererror" class="comerror text-danger">Enter Valid User Name</span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label>Email Address :<span style="color: red;">*</span></label>
+                        <input type="email" name="email" class="form-control" id="email" autocomplete="off" 
+                        >
+                        <span id="emailerror" name="emailerror" class="comerror text-danger">Enter Valid Email Id</span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label>Password :<span style="color: red;">*</span></label>
+                        <input type="password" name="password" class="form-control" id="password" autocomplete="off"
+                        >
+                        <span id="passerror" name="passerror" class="comerror text-danger">Enter correct password must contain one uppercase,one lowercase, one digit,one specialcharcter and 8 character's long</span><br>
+
+                    </div> 
+                    <div class="form-group">
+                        <label>Confirm Password :<span style="color: red;">*</span></label>
+                        <input type="password" name="conpassword" class="form-control" autocomplete="off" id="conpassword" >
+                        <span id="cpasserror" name="cpasserror" class="comerror text-danger">Password didn't match</span><br>
+                        
+                    </div>   
+                    <div class="form-group">
+                        <label>Mobile Number :<span style="color: red;">*</span></label>
+                        <input type="text" name="number" class="form-control" autocomplete="off" id="number" >
+                        <span id="numerror" name="numerror" class="comerror text-danger">Mobile No Should 10 Digits</span><br>
+
+                    </div>  
+                    
+                    <div class="form-group">
+                        <label for="country">Country<span style="color: red;">*</span></label>
+                                <select id="country" name="country" >
+                                    <option value="selectcountry">Select Country</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="India">India</option>
+                                    <option value="London">London</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                </select><br><br>
+                                <span id="conerror" name="conerror" class="comerror text-danger">Select Atlest One Country</span>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <p>Gender:<span style="color: red;">*</span></p>
+                        <input type="radio" id="Male" name="gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="gender" value="Female">
+                        <label for="Female">Female</label><br><br>
+                        <span id="generror" name="generror" class="comerror text-danger">Select Your Gender</span>
+
+                    </div>
+                   
+                    <div class="form-group" id="checkgroup">
+                        <p>Hobbies<span style="color: red;">*</span></p>
+                        <input type="checkbox" class="hobby" name="hobbies" >
+                        <label for="sport" >Sport</label>
+                        <input type="checkbox" class="hobby" name="hobbies" >
+                        <label for="movies" >Movies</label>
+                        <input type="checkbox" class="hobby" name="hobbies" >
+                        <label for="music" >Music</label><br><br>
+                        <span id="hoberror" name="hoberror" class="comerror text-danger">Please Select atleast 2 hobbies</span>
+
+                        
+                    </div>
+                   
+                    <div class="form-group">
+                        <button type="submit" id="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
+
+                    </div>
+                
+
+            
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+  
+    </body>
+
+</html>

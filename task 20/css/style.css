@@ -1,0 +1,37 @@
+body {
+  background-color: aliceblue;
+}
+
+.img {
+  height: 150px;
+  width: 250px;
+}
+
+.parsley-errors-list li {
+  color: red;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+  font-size: medium;
+}
+
+.required {
+  font-size: x-large;
+}
+
+.extra_field {
+  margin-top: 10px;
+}
+
+.extra_field .required:after {
+  content: " *";
+  color: red;
+  font-size: medium;
+}
+
+.extra_field .required {
+  font-size: medium !important;
+}
+

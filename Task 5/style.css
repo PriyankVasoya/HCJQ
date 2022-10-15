@@ -1,0 +1,107 @@
+/* * {
+    box-sizing: border-box;
+  } */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for header */
+header {
+    padding: 30px 120px;
+    display: flex;
+    color: #fff;
+    background: rgb(96, 19, 197);
+}
+
+
+/* Styles for navbar */
+nav {
+    float: left;
+    padding: 2px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(206, 38, 181);
+}
+
+nav ul {
+    display: flex;
+    margin-left: 700px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    padding: 0px 18px;
+    text-transform: capitalize;
+}
+
+/* Css for iframe */
+.First_frame {
+    width: 100%;
+    height: 500px;
+}
+
+/* Section CSS */
+section {
+    width: 100%;
+    display: table;
+}
+
+/* Css for article */
+article {
+    float: left;
+    width: 20%;
+    height: 400px;
+    background: rgb(206, 38, 181);
+}
+
+article ul {
+    list-style: none;
+    padding: 10px 0px;
+    
+}
+
+article ul li {
+
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+article ul li a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Css for Frame2 */
+.second_frame {
+    text-align: center;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.frame_i {
+    width: 1282px;
+    height: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(96, 19, 197);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

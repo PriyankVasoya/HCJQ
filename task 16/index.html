@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cafe</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="col-md-12 maindiv text-light mx-auto">
+			<h2 class="text-center">
+				Coffee Culture Cafe
+			</h2>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col">
+				<div class="input-group rounded">
+					<input type="text" class="form-control searchitem" id="clear" >
+					<span class="input-group-text border-0" id="search" type="button">
+						<i class="bi bi-search"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+        <div class="row mt-2">
+            <div class="col-10 col-md-12 col-sm-6 mx-auto d-flex justify-content-around my-2 flex-wrap">
+                <a href="#" id="all" class="btn btn-outline-secondary text-uppercase">all</a>
+                <a href="#" id="Pizza" class="btn btn-outline-secondary text-uppercase">Pizza</a>
+                <a href="#" id="Burger" class="btn btn-outline-secondary text-uppercase">Burger</a>
+                <a href="#" id="Sandwich" class="btn btn-outline-secondary text-uppercase">Sandwich</a>
+                <a href="#" id="Coffee" class="btn btn-outline-secondary text-uppercase">Coffee</a>
+                <div class="dropdown">
+					<button class="btn btn-outline-secondary text-uppercase" type="submit" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					  Sort Price Wise
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					  <li><a class="dropdown-item" id="htolsort">Price High To Low</a></li>
+					  <li><a class="dropdown-item" id="ltohsort">Price Low To High</a></li>
+					</ul>
+				  </div>
+            </div>
+        </div>
+        <div class="row mt-2 display">
+        </div>
+	</div>
+
+    <script src="js/script.js"></script>
+		<script src="js/1.js"></script>
+        
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+

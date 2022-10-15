@@ -1,0 +1,9 @@
+ul li{
+    margin:5px;
+}
+ul .fa-trash{
+    position: absolute;
+    cursor: pointer;
+    color: red;
+    left:920px;
+}

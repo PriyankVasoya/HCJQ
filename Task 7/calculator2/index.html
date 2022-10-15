@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            *{
+            margin:0;
+            padding:0;
+        }
+        .main{
+            background-color: black;
+            color:white;
+            
+            
+            border-radius: 10px;
+        
+        }
+        #display{
+            font-size:20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container main">
+            <div class="row">
+                <div class="col-sm-12 text-center ">
+                    <br><h1>Calculator</h1><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <form name="calculator">
+                        <input type="text" class="w-100" name="number1" class="number" id="number1" oninput="num1()" disabled>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-1">
+                    <form name="calculator">
+                        <input type="text" class="w-100" name="display" id="display" disabled>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <form name="calculator">
+                        <input type="text" class="w-100" name="number2" class="number" id = "number2" oninput="num2() " disabled>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <form name="calculator">
+                        <input type="button" class="btn btn-primary w-100 " value="=" onclick = "equal()" ><br><br>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <form name="calculator">
+                        <input type="text" class="w-100" name="answer" id="answer" disabled>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <form name="calculator">
+                        <input type="button" class="btn btn-primary w-100" value="/" onclick="document.getElementById('display').value = '/' "><br><br>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <form name="calculator">
+
+                        <input type="button" class="btn btn-primary w-100" value="7" id="seven" onclick="number1('7')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="4" id="four" onclick="number1('4')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="1" id="one" onclick="number1('1')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="Clear" id="clear" onclick = "clrscr()" ><br><br>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <form action="#" name="calculator">
+
+                        <input type="button" class="btn btn-primary w-100" value="8" id="eight" onclick="number1('8')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="5" id="five" onclick="number1('5')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="2" id="two" onclick="number1('2')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="." id="point" onclick="number1('.')"><br><br>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <form name="calculator">
+                    
+                        <input type="button" class="btn btn-primary w-100" value="9" id="nine" onclick="number1('9')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="6" id="six" onclick="number1('6')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="3" id="three" onclick="number1('3')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="0" id="zero" onclick="number1('0')"><br><br>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <form name="calculator">
+                        <input type="button" class="btn btn-primary w-100" value="%" onclick="checkop('%')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="*" onclick="checkop('*')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="-" onclick="checkop('-')"><br><br>
+                        <input type="button" class="btn btn-primary w-100" value="+" onclick="checkop('+')"><br><br>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+       
+    <script src="js/calc.js"></script>
+
+    </body>
+
+</html>

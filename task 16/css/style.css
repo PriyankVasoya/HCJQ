@@ -1,0 +1,149 @@
+body {
+    background-color: gainsboro;
+}
+
+.maindiv h2 {
+    background: #a175b4 !important;
+}
+
+#box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5em;
+    padding: 2em 0;
+}
+
+.card {
+    background-color: #fff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.card .container {
+    background-color: #a175b4;
+    color: white;
+}
+
+.container {
+    padding-top: 1em;
+    color: #090909;
+}
+
+.container h5 {
+    font-weight: 500;
+    ;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+    img {
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 15em;
+        margin-top: 1em;
+    }
+
+    #box {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    img {
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 20em;
+        margin-top: 1em;
+    }
+
+    #box {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    img {
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 20em;
+        margin-top: 1em;
+    }
+
+    #box {
+        grid-template-columns: auto;
+        grid-column-gap: 1em;
+    }
+}
+
+.maindiv {
+    background-color: #a175b4;
+}
+
+.card {
+    border: 2px solid #9d14db;
+    width: 18rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: auto;
+    margin-top: 5px;
+    padding: 1em;
+}
+
+.card-body {
+    background-color: #a175b4;
+    color: white;
+}
+
+.col-md-4 {
+    padding-bottom: 8px;
+}
+
+img {
+    width: 100%;
+    height: 14rem;
+}
+
+/* body {
+    background-color: lightgrey;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+}
+
+#search-icon {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.color {
+    color: lightpink;
+} */

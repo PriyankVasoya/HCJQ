@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+
+    </head> 
+    <body>
+        <div class="container">
+            <h1 class="text-center">Application Form</h1>
+            <div class="col-sm-8 col-lg-8 col-xs-8 col-md-8 m-auto d-block">
+                <form action="" name="myform" onsubmit="return validation()" class="bg-light" method="post" >
+                    <div class="form-group mt-4">
+                        <label> First Name :</label>
+                        <input type="text" name="fname" class="form-control" id="fname" autocomplete="off" oninput="firstname()">
+                        <span id="fnameerror" name="fnameerror" class="text-danger" ></span><br>
+                    </div>   
+                    <div class="form-group">
+                        <label> Last Name :</label>
+                        <input type="text" name="lname" class="form-control" id="lname" autocomplete="off" oninput="lastname()">
+                        <span id="lnameerror" name="lnameerror" class="text-danger"></span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label> User Name :</label>
+                        <input type="text" name="username" class="form-control" id="username" autocomplete="off" oninput="usernameFunc()">
+                        <span id="usererror" name="usererror" class="text-danger"></span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label>Email Address :</label>
+                        <input type="email" name="email" class="form-control" id="email" autocomplete="off" oninput="emailFunc()">
+                        <span id="emailerror" name="emailerror" class="text-danger"></span><br>
+
+                    </div>  
+                    <div class="form-group">
+                        <label>Password :</label>
+                        <input type="password" name="password" class="form-control" id="password" autocomplete="off" oninput="passFunc()">
+                        <span id="passerror" name="passerror" class="text-danger"></span><br>
+
+                    </div> 
+                    <div class="form-group">
+                        <label>Confirm Password :</label>
+                        <input type="password" name="conpassword" class="form-control" autocomplete="off" id="conpassword" oninput="cpassFunc()">
+                        <span id="cpasserror" name="cpasserror" class="text-danger"></span><br>
+                        
+                    </div>   
+                    <div class="form-group">
+                        <label>Mobile Number :</label>
+                        <input type="text" name="number" class="form-control" autocomplete="off" id="number" oninput="numFunc()">
+                        <span id="numerror" name="numerror" class="text-danger"></span><br>
+
+                    </div>  
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                                <select id="country" name="country" onchange = "countryFunc()">
+                                    <option value="select country">Select Country</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="India">India</option>
+                                    <option value="London">London</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                </select><br><br>
+                                <span id="conerror" name="conerror" class="text-danger"></span>
+                        
+                    </div> 
+                    <div class="form-group">
+                        <p>Gender:</p>
+                        <input type="radio" id="Male" name="Gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="Gender" value="Female">
+                        <label for="Female">Female</label><br><br>
+                        <span id="generror" name="generror" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <p>Hobbies</p>
+                        <input type="checkbox" id="hobby" name="hobbies" checked>
+                        <label for="sport" >Sport</label>
+                        <input type="checkbox" id="hobby" name="hobbies" >
+                        <label for="movies" >Movies</label>
+                        <input type="checkbox" id="hobby" name="hobbies" >
+                        <label for="music" >Music</label><br><br>
+                        <span id="hoberror" name="hoberror" class="text-danger"></span>
+
+                        
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type=submit id="submit" class="btn btn-primary" value="Submit">
+
+                    </div>
+                
+
+            
+                </form>
+            </div>
+        </div>
+        <script src="js/validate.js"></script>
+    </body>
+
+</html>
